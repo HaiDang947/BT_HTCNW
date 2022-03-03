@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 800px;
+            height: 500px;
+            background-color: blue;
+        }
+        header{
+            width: 800px;
+            height: 100px;
+            background-color: brown;
+        }
+        .section{
+            width: 800px;
+            height: 400px;
+            background-color: chartreuse;
+        }
+        aside{
+            width: 100px;
+            height: 400px;
+            background-color: cyan;
+            float: left;
+        }
+        .content{
+            width: 700px;
+            height: 400px;
+            background-color: darkmagenta;
+            float: left;
+        }
+        .inside{
+            width: 580px;
+            height: 360px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-right: 100px;
+            background-color: bisque;
+        }
+        .inside1{
+            width: 580px;
+            height: 180px;
+            background-color: darkcyan;
+        }
+        .inside2{
+            width: 580px;
+            height: 180px;
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <p>STT:09</p>
+    <p>MSSV: 20069701</p>
+    <p>Họ tên: Trương Hải Đăng</p>
+    <p>Lớp học phần: DHCNTT16C_T5_Tiết 10-1212</p>
+    <br>
+    <p>Lợi ích của việc thiết kế layout bằng CSS Layout:</p>
+    <ul>
+        <li>Thiết kế layout với CSS có một số thuận lợi đối với việc tối ưu hóa công cụ tìm kiếm (SEO) điển hình là việc có thể đặt nội dung trước các mã lệnh khác bằng thẻ DIV (luôn nhớ rằng việc bố trí những nội dung quan trọng bao gồm từ khóa lên phần đầu của trang web luôn làm gia tăng sự nổi bật của từ khóa).</li>
+        <li>CSS giúp giảm bớt kích thước của trang web và khách tham quan (visitor) không cần phải tải về những dữ liệu mang tính chất trình bày khi xem mỗi trang vì chúng đã được lưu trong bộ nhớ tạm (cache) của trình duyệt.</li>
+        <li>Đồng bộ định dạng và dùng chung cho tất cả các trang.</li>
+        <li>Vẫn có thể dùng CSS ngoài mục đích SEO.</li>
+        <li>Website sẽ được tổ chức chặt chẽ và dễ bảo trì.</li>
+    </ul>
+    <p>Nhược điểm khi sử dụng Table để làm Layout</p>
+    <ul>
+        <li>Table làm gia tăng kích thước của site dẫn đến việc tiêu tốn băng thông không cần thiết.</li>
+        <li>Tiêu tốn thời gian hiệu chỉnh nhiều hơn so với việc dùng CSS nếu website có thay đổi.</li>
+        <li>Những người khiếm thị hoặc những người truy cập website bằng DTDĐ hay PDA sẽ không được hiển thị đúng đắn.</li>
+    </ul>
+    <br>
+    <p>Thiết kế bằng CSS Layout</p>
+    <div class="wrapper">
+        <header></header>
+        <div class="section">
+            <aside></aside>
+            <div class="content">
+                <div class="inside">
+                    <div class="inside1"></div>
+                    <div class="inside2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <p>Thiết kê Layout bằng Table</p>
+    <table style="width: 800px;height: 500px;" border="1" >
+        <tr>
+            <td style="width: 800px;height: 100px;" colspan="3"></td>
+        </tr>
+        <tr>
+            <td style="width: 100px;height: 400px;" rowspan="2"></td>
+            <td style="width: 580px;height: 180px;" colspan="2"></td>
+        </tr>
+        <tr>
+            <td style="width: 580px;height: 180px;" colspan="2"></td>
+        </tr>
+    </table>
+</body>
+</html>
